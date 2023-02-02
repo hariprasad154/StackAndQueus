@@ -1,10 +1,7 @@
 package Com.Queue;
 
-
-
 public class Queue<T> {
 	MyLinkedList<T> linkedList;
-
 	public Queue() {
 		linkedList = new MyLinkedList<>();
 	}
@@ -12,7 +9,6 @@ public class Queue<T> {
 		linkedList.Append(data);
 	}
 	public  void Dequeue() {
-		
 		MyNode<T> temp = linkedList.head;
 		while(temp.next !=linkedList.tail) {
 			temp=temp.next;
