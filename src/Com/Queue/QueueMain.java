@@ -10,6 +10,7 @@ public class QueueMain {
 		que.display();
 		que.Dequeue();
 		que.display();
+		
 
 	}
 
