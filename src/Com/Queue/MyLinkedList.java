@@ -19,9 +19,7 @@ public class MyLinkedList <T> {
 			head = newNode;
 		}
 	}
-	public void peek() {
-		System.out.println(tail.data);
-	}
+	
 	public void Append(T data) {
 		MyNode<T> newNode = new MyNode(data);
 		if (head == null) {
@@ -51,13 +49,13 @@ public class MyLinkedList <T> {
 	}
 	public T popLast() {
 		T popData = tail.data;
-		MyNode<T> temp = head;
-		while (temp.next != tail) {
-			temp = temp.next;
-		}
-		temp.next = null;
-		tail = temp;
-		return popData;
+        MyNode<T> temp = head;
+        while (temp.next != tail) {
+            temp = temp.next;
+        }
+        temp.next = null;
+        tail = temp;
+        return popData;
 	}
 	public MyNode<T> search(T searchData) {
 		MyNode<T> temp = head;
